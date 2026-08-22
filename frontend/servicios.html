@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Raptor Devs</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Hoja de Estilos Personalizada -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="flex flex-col min-h-screen justify-between">
+
+    <!-- NAVBAR / ENCABEZADO MULTI-PÁGINA -->
+    <nav class="w-full sticky top-0 bg-[#1C2024]/80 backdrop-blur-md z-50 border-b border-stone-800/60">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <!-- Logotipo -->
+            <a href="index.html" class="flex items-center">
+                <img src="img/logo 3.png" alt="Raptor Devs" class="h-8 w-auto">
+            </a>
+            
+            <!-- Enlaces a páginas independientes -->
+            <div class="hidden md:flex space-x-10 text-xs font-normal text-stone-400 tracking-wide">
+                <a href="index.html" class="hover:text-white transition-colors">Inicio</a>
+                <a href="quienes-somos.html" class="hover:text-white transition-colors">Quienes somos</a>
+                <a href="servicios.html" class="text-white font-semibold">Servicio</a>
+                <a href="productos.html" class="hover:text-white transition-colors">Productos</a>
+                <a href="contactanos.html" class="hover:text-white transition-colors">Contactanos</a>
+            </div>
+            
+            <!-- Botón de acción rápido -->
+            <a href="contactanos.html" class="text-xs font-normal text-[var(--raptor-green)] hover:underline tracking-wide">
+                Cotizar &rarr;
+            </a>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL: SERVICIOS -->
+    <main class="w-full max-w-5xl mx-auto px-6 pt-16 pb-28 flex-grow space-y-24">
+        
+        <!-- ENCABEZADO DE PÁGINA -->
+        <div class="space-y-6 max-w-3xl">
+            <div class="text-xs font-mono text-[var(--raptor-green)] uppercase tracking-widest font-bold">// Capacidades Técnicas</div>
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight text-white leading-tight">
+                Desarrollo a medida. <br>Sin intermediarios.
+            </h1>
+            <p class="text-stone-400 text-lg md:text-xl font-light leading-relaxed">
+                Diseñamos e integramos lógica interna avanzada, arquitecturas backend escalables y microservicios conectados para resolver cuellos de botella operativos en tu empresa.
+            </p>
+        </div>
+
+        <!-- LISTA DE SERVICIOS (ESTILO APPLE ESPECIFICACIONES) -->
+        <div class="space-y-20 border-t border-stone-800/60 pt-16">
+            
+            <!-- SERVICIO 1 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-4">
+                    <div class="text-[var(--raptor-green)] font-mono text-sm font-bold">&lt;01 / SISTEMAS CORPORATIVOS&gt;</div>
+                    <h2 class="text-2xl md:text-4xl font-bold tracking-tight text-white">Sistemas Internos, ERPs & CRMs a Medida</h2>
+                    <p class="text-stone-400 text-sm md:text-base font-light leading-relaxed">
+                        Desarrollamos herramientas de gestión interna adaptadas exactamente al flujo de trabajo de tu empresa. Eliminamos los procesos manuales redundantes y centralizamos la información en bases de datos relacionales y de alto rendimiento.
+                    </p>
+                    <ul class="font-mono text-xs text-stone-500 space-y-2 pt-2">
+                        <li><span class="text-white">&gt;</span> Automatización de flujos de trabajo internos</li>
+                        <li><span class="text-white">&gt;</span> Integración con PostgreSQL / MySQL / Oracle</li>
+                        <li><span class="text-white">&gt;</span> Panel de control corporativo sin dependencias</li>
+                    </ul>
+                </div>
+                <div class="overflow-hidden rounded-xl border border-stone-800/80">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80" 
+                         alt="Sistemas corporativos a medida" 
+                         class="w-full h-72 object-cover opacity-85 select-none">
+                </div>
+            </div>
+
+            <!-- SERVICIO 2 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center border-t border-stone-800/60 pt-16">
+                <div class="order-2 md:order-1 overflow-hidden rounded-xl border border-stone-800/80">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80" 
+                         alt="Arquitectura de APIs y microservicios" 
+                         class="w-full h-72 object-cover opacity-85 select-none">
+                </div>
+                <div class="order-1 md:order-2 space-y-4">
+                    <div class="text-[var(--raptor-green)] font-mono text-sm font-bold">&lt;02 / BACKEND & APIS&gt;</div>
+                    <h2 class="text-2xl md:text-4xl font-bold tracking-tight text-white">Arquitectura de APIs & Microservicios</h2>
+                    <p class="text-stone-400 text-sm md:text-base font-light leading-relaxed">
+                        Construimos backends robustos y seguros diseñados para conectar múltiples aplicaciones o servicios web. Garantizamos alta concurrencia de peticiones, endpoints documentados y la máxima velocidad de respuesta.
+                    </p>
+                    <ul class="font-mono text-xs text-stone-500 space-y-2 pt-2">
+                        <li><span class="text-white">&gt;</span> Despliegue sobre FastAPI / Node.js</li>
+                        <li><span class="text-white">&gt;</span> Conexión e integración de pasarelas de pago</li>
+                        <li><span class="text-white">&gt;</span> Arquitecturas RESTful y protocolos seguros</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- SERVICIO 3 -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center border-t border-stone-800/60 pt-16">
+                <div class="space-y-4">
+                    <div class="text-[var(--raptor-green)] font-mono text-sm font-bold">&lt;03 / RENDIMIENTO Y OPTIMIZACIÓN&gt;</div>
+                    <h2 class="text-2xl md:text-4xl font-bold tracking-tight text-white">Optimización Web Core & Rendimiento Móvil</h2>
+                    <p class="text-stone-400 text-sm md:text-base font-light leading-relaxed">
+                        Reestructuramos páginas y plataformas lentas para elevar sus métricas Core Web Vitals a 100/100. Eliminamos scripts bloqueantes, optimizamos assets y adaptamos todo el diseño para la navegación táctil en celulares.
+                    </p>
+                    <ul class="font-mono text-xs text-stone-500 space-y-2 pt-2">
+                        <li><span class="text-white">&gt;</span> Carga ultrarrápida (menos de 1 segundo)</li>
+                        <li><span class="text-white">&gt;</span> Reducción drástica de la tasa de rebote</li>
+                        <li><span class="text-white">&gt;</span> Estructura 100% Mobile Ready</li>
+                    </ul>
+                </div>
+                <div class="overflow-hidden rounded-xl border border-stone-800/80">
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80" 
+                         alt="Optimización y rendimiento móvil" 
+                         class="w-full h-72 object-cover opacity-85 select-none">
+                </div>
+            </div>
+
+        </div>
+
+        <!-- LLAMADO DE ACCIÓN INTERNO -->
+        <div class="pt-12 border-t border-stone-800/60 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="space-y-1 text-center md:text-left">
+                <h3 class="text-xl font-bold text-white">¿Necesitas una solución técnica específica?</h3>
+                <p class="text-stone-400 text-sm font-light">Escríbenos y analizamos la viabilidad de tu proyecto.</p>
+            </div>
+            <a href="contactanos.html" class="bg-[var(--raptor-green)] text-black font-bold px-8 py-3 rounded-full text-sm hover:bg-opacity-90 transition-all">
+                Cotizar servicio
+            </a>
+        </div>
+
+    </main>
+
+    <!-- FOOTER MULTI-COLUMNA -->
+    <footer class="w-full bg-[#16191C] text-stone-400 text-xs font-light pt-16 pb-8 border-t border-stone-800/60">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-10 md:gap-6 pb-16">
+                
+                <!-- Columna 1: Marca y Redes -->
+                <div class="col-span-2 md:col-span-1 space-y-4">
+                    <img src="img/logo 3.png" alt="Raptor Devs" class="h-6 w-auto">
+                    <p class="text-stone-500 font-mono text-[11px] leading-relaxed">The Intelligence<br>You Trust.</p>
+                </div>
+
+                <!-- Columna 2: Navegación -->
+                <div class="space-y-3">
+                    <h5 class="text-white font-semibold font-mono tracking-wider text-[11px] uppercase">// Páginas</h5>
+                    <ul class="space-y-2 text-stone-500 font-mono text-[11px]">
+                        <li><a href="index.html" class="hover:text-[var(--raptor-green)] transition-colors">Inicio</a></li>
+                        <li><a href="quienes-somos.html" class="hover:text-[var(--raptor-green)] transition-colors">Quienes somos</a></li>
+                        <li><a href="servicios.html" class="hover:text-[var(--raptor-green)] transition-colors">Servicio</a></li>
+                        <li><a href="productos.html" class="hover:text-[var(--raptor-green)] transition-colors">Productos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Servicios -->
+                <div class="space-y-3">
+                    <h5 class="text-white font-semibold font-mono tracking-wider text-[11px] uppercase">// Capacidades</h5>
+                    <ul class="space-y-2 text-stone-500 font-mono text-[11px]">
+                        <li><a href="servicios.html" class="hover:text-[var(--raptor-green)] transition-colors">Sistemas Corporativos</a></li>
+                        <li><a href="servicios.html" class="hover:text-[var(--raptor-green)] transition-colors">Arquitectura de APIs</a></li>
+                        <li><a href="productos.html" class="hover:text-[var(--raptor-green)] transition-colors">Webs Core</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Recursos -->
+                <div class="space-y-3">
+                    <h5 class="text-white font-semibold font-mono tracking-wider text-[11px] uppercase">// Contacto</h5>
+                    <ul class="space-y-2 text-stone-500 font-mono text-[11px]">
+                        <li><a href="contactanos.html" class="hover:text-[var(--raptor-green)] transition-colors">Cotizar Proyecto</a></li>
+                        <li><a href="https://wa.me/593999999999" target="_blank" class="hover:text-[var(--raptor-green)] transition-colors">WhatsApp Directo</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 5: Estándares -->
+                <div class="space-y-4 font-mono text-[10px] text-stone-500">
+                    <h5 class="text-white font-semibold tracking-wider text-[11px] uppercase">// Estándares</h5>
+                    <div class="space-y-2 border-l border-stone-800 pl-3">
+                        <div><span class="text-white font-medium">ISO/IEC 27001</span><br>Seguridad de Información</div>
+                        <div><span class="text-white font-medium">PCI-DSS Compliant</span><br>Lógica de Pagos Segura</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="pt-8 border-t border-stone-800/60 flex flex-col md:flex-row justify-between items-center gap-4 text-stone-600 text-[11px] font-mono">
+                <div>2026 &copy; Raptor Devs. Todos los derechos reservados.</div>
+                <div class="text-[var(--raptor-green)] opacity-80">// Built for speed_</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/593999999999?text=Hola%20Raptor%20Devs,%20quiero%20cotizar%20una%20solución%20digital." 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] text-white rounded-full shadow-lg hover:scale-110 transition-transform duration-300"
+       title="Escríbenos por WhatsApp">
+        <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.4 0 11.973 0c3.184.001 6.177 1.24 8.43 3.496 2.254 2.256 3.491 5.253 3.491 8.437 0 6.574-5.34 11.922-11.914 11.922-1.996-.001-3.963-.5-5.743-1.44L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.795 1.451 5.435 0 9.856-4.409 9.859-9.83.001-2.628-1.024-5.1-2.885-6.957C16.548 1.961 14.09 .937 11.483.937c-5.438 0-9.858 4.411-9.862 9.833-.001 1.658.437 3.279 1.266 4.712L1.879 21.65l6.452-1.681zM17.486 14.4c-.333-.167-1.97-.973-2.274-1.084-.303-.11-.524-.167-.745.167-.221.333-.856 1.084-1.05 1.306-.193.222-.386.25-.72.083-.333-.167-1.408-.52-2.681-1.655-.993-.886-1.664-1.98-1.858-2.313-.193-.333-.02-.513.147-.679.15-.149.333-.389.5-.583.167-.195.222-.333.333-.556.11-.222.056-.417-.028-.583-.083-.167-.745-1.792-1.02-2.459-.268-.644-.539-.556-.745-.556-.193 0-.414-.014-.636-.014-.221 0-.58.083-.884.417-.303.333-1.16 1.139-1.16 2.778 0 1.639 1.192 3.223 1.358 3.445.167.222 2.346 3.583 5.684 5.028.794.343 1.413.549 1.897.704.797.254 1.522.218 2.094.132.639-.097 1.97-.806 2.247-1.583.276-.778.276-1.445.193-1.583-.083-.14-.303-.222-.636-.389z"/>
+        </svg>
+    </a>
+
+</body>
+</html>

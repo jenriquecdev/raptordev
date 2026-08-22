@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Páginas excluidas para evitar contenido duplicado o indexación irrelevante
+Disallow: /privacidad.html
+Disallow: /terminos.html
+Disallow: /cookies.html
+Disallow: /aviso-legal.html
+Disallow: /gracias.html
+Disallow: /404.html
+
+# Ruta de tu mapa del sitio
+Sitemap: https://www.raptordevecu.com/sitemap.xml

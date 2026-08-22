@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0a">
+    <link rel="icon" type="image/webp" href="logo/logo 3 web.webp">
+    
+    <title>404 - Ruta Devorada | Raptor Devs</title>
+    <!-- Evitamos que Google indexe el error 404 -->
+    <meta name="robots" content="noindex, follow">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Estilos exclusivos para la pantalla 404 -->
+    <style>
+        .error-module {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            background-image: 
+                radial-gradient(circle at center, rgba(50, 205, 50, 0.05) 0%, transparent 60%);
+        }
+        
+        .ascii-raptor {
+            font-family: var(--font-mono);
+            color: var(--accent);
+            font-size: clamp(8px, 1.2vw, 14px);
+            line-height: 1.15;
+            white-space: pre;
+            margin-bottom: 25px;
+            text-align: left;
+            display: inline-block;
+            text-shadow: 0 0 10px rgba(50, 205, 50, 0.3);
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .error-code {
+            font-family: var(--font-mono);
+            font-size: clamp(60px, 12vw, 120px);
+            font-weight: 800;
+            line-height: 1;
+            margin-bottom: 10px;
+            color: var(--text-primary);
+            letter-spacing: -0.05em;
+        }
+
+        .error-title {
+            font-size: clamp(20px, 4vw, 28px);
+            margin-bottom: 20px;
+        }
+
+        .error-desc {
+            color: var(--text-secondary);
+            font-size: 18px;
+            max-width: 500px;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body>
+
+    <main class="error-module">
+        
+        <!-- ARTE ASCII DEL VELOCIRAPTOR -->
+        <div class="ascii-raptor" aria-hidden="true">
+                                                     ___._
+                                                   .'  <0>'-.._
+                                                  /  /.--.____")
+                                                 |   \   __.-'~
+                                                 |  :  -'/
+                                                /:.  :.-'
+__________                                     | : '. |
+'--.____  '--------.______       _.----.-----./      :/
+        '--.__            `'----/       '-.      __ :/
+              '-.___           :           \   .'  )/
+                    '---._           _.-'   ] /  _/
+                         '-._      _/     _/ / _/
+                             \_ .-'____.-'__< |  \___
+                               <_______.\    \_\_---.7
+                              |   /'=r_.-'     _\\ =/
+                          .--'   /            ._/'>
+                        .'   _.-'
+                       / .--'
+                      /,/
+                      |/`)
+                      'c=,
+
+        </div>
+        
+        <h1 class="error-code">404</h1>
+        <h2 class="terminal-text error-title">&gt; RUTA_DEVORADA</h2>
+        
+        <p class="error-desc">
+            Falla crítica: Te has adentrado en territorio inexplorado. El archivo que buscas ha sido destruido por la fauna local o nunca existió en esta infraestructura.
+        </p>
+        
+        <a href="index.html" class="btn-pill">&lt;/&gt; Inicio</a>
+        
+    </main>
+
+</body>
+</html>
